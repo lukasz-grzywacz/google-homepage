@@ -1,16 +1,20 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0px;
     padding: 0px;
     font-family: arial,sans-serif;
     color:rgba(0,0,0,0.87);
+ 
 }
 #main-div {
-    padding: 10px;
-    max-height: 92px;
-    width: 100%;
+  
+    min-height: 95%;
+    min-width: 100%;
 }
 .main-nav {
-    padding: 8px 20px;
+    padding: 9px 20px;
     font-size:19px;
     
 }
@@ -20,16 +24,15 @@ body {
     justify-content:flex-end;  
     flex-direction: row; 
     padding: 8px 20px;
-
-
-
 }   
-a {
+
+.up-nav a{
     text-decoration: none;
     color:rgba(0,0,0,0.87);;
 
 }
-a:hover {
+
+.upa:hover {
     text-decoration: underline;
 }
 .material-icons.md-36 { font-size: 36px; }
@@ -82,4 +85,82 @@ button.main-nav{
     width:600px;
     height: 40px;
     font-size: 20px;
+}
+
+.buttons-undersearch {  
+    margin: 20px 40px;
+    padding:30px 0;
+    border: 0px;
+}
+
+.button-undersearch {  
+    padding: 15px 25px;
+    margin:0 9px;
+    font-size:21px;
+    border: 0px;
+    color:  #4d4d4d;
+    background:#f8f8f8af;
+    border-radius: 6px;
+}
+.button-undersearch:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 4px #c7c7c7;;
+}
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+    background-color: rgb(245, 245, 245);
+    color:    rgba(0,0,0,.54);
+}
+  .footer-first{
+      font-size: 22px;
+      padding: 6px 40px;
+  }
+  .footer-second {
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      color: rgba(0,0,0,.54);
+  }
+  .nav-footer-left ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 23px;
+    padding-left: 40px;
+  }
+  .nav-footer-left li {
+      padding: 15px;
+  }
+  .nav-footer-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 23px;
+    padding-right: 30px;
+  } 
+  .nav-footer-right li  {
+    padding: 15px;
+}
+#footer a {
+    color: rgba(0,0,0,.54);
+    text-decoration: none;
+}
+#hr-footer {
+
+    height: 1px;
+        background-color: rgba(190, 190, 190, 0.54);
+        border: none;
+}
+#footer a:hover {
+    text-decoration: underline;
 }
